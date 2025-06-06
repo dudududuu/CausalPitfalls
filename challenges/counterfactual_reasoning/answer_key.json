@@ -1,0 +1,68 @@
+[
+    {
+      "dataset": "clinical_trial_sem.csv",
+      "VARIABLE_X": "drug_dose_mg",
+      "VARIABLE_Y": "blood_concentration",
+      "CONFOUNDER": "baseline_health",
+      "DOWNSTREAM_VAR": "therapeutic_score",
+      "DOSE_BEFORE": -1,
+      "DOSE_AFTER": 2,
+      "CONDITIONAL_DIFFERENCE": -0.8281,
+      "ATE": 1.9634,
+      "CORRECTION_METHOD": "Regression Adjustment",
+      "TOLERANCE": 0.5
+    },
+    {
+      "dataset": "education_performance_sem.csv",
+      "VARIABLE_X": "study_hours",
+      "VARIABLE_Y": "exam_score",
+      "CONFOUNDER": "student_aptitude",
+      "DOWNSTREAM_VAR": "course_grade",
+      "DOSE_BEFORE": -1,
+      "DOSE_AFTER": 2,
+      "CONDITIONAL_DIFFERENCE": -1.4125,
+      "ATE": 0.9453,
+      "CORRECTION_METHOD": "Regression Adjustment",
+      "TOLERANCE": 0.5
+    },
+    {
+      "dataset": "investment_outcome_sem.csv",
+      "VARIABLE_X": "investment_amount",
+      "VARIABLE_Y": "portfolio_return",
+      "CONFOUNDER": "risk_tolerance",
+      "DOWNSTREAM_VAR": "investor_satisfaction",
+      "DOSE_BEFORE": -1,
+      "DOSE_AFTER": 2,
+      "CONDITIONAL_DIFFERENCE": -2.2712,
+      "ATE": 0.8587,
+      "CORRECTION_METHOD": "Regression Adjustment",
+      "TOLERANCE": 0.5
+    },
+    {
+      "dataset": "climate_impact_sem.csv",
+      "VARIABLE_X": "emission_levels",
+      "VARIABLE_Y": "climate_index",
+      "CONFOUNDER": "baseline_temp",
+      "DOWNSTREAM_VAR": "loss_cost_estimate",
+      "DOSE_BEFORE": -1,
+      "DOSE_AFTER": 2,
+      "CONDITIONAL_DIFFERENCE": -1.4401,
+      "ATE": 0.9012,
+      "CORRECTION_METHOD": "Regression Adjustment",
+      "TOLERANCE": 0.5
+    },
+    {
+      "dataset": "manufacturing_quality_sem.csv",
+      "VARIABLE_X": "maintenance_intensity",
+      "VARIABLE_Y": "performance_metric",
+      "CONFOUNDER": "machine_condition",
+      "DOWNSTREAM_VAR": "warranty_cost",
+      "DOSE_BEFORE": -1,
+      "DOSE_AFTER": 2,
+      "CONDITIONAL_DIFFERENCE": -1.6690,
+      "ATE": 0.9041,
+      "CORRECTION_METHOD": "Regression Adjustment",
+      "TOLERANCE": 0.5
+    }
+]
+  

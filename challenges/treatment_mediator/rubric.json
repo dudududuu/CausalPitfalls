@@ -1,0 +1,63 @@
+{
+  "criteria": [
+    {
+      "id": "IDENTIFY_TRUE_CONFOUNDERS",
+      "desc": "Correctly identifies true confounders (<TRUE_CONFOUNDERS>) and their influence on treatment and outcome.",
+      "type": "justification",
+      "expected": "<TRUE_CONFOUNDERS>"
+    },
+    {
+      "id": "IDENTIFY_MEDIATOR",
+      "desc": "Accurately identifies the mediator (<MEDIATOR>) and describes its role between treatment and outcome.",
+      "type": "justification",
+      "expected": "<MEDIATOR>"
+    },
+    {
+      "id": "EXPLAIN_INTERACTION",
+      "desc": "Explains how the interaction between <TREATMENT> and <MEDIATOR> affects the outcome interpretation.",
+      "type": "interaction_justification",
+      "expected": "<TREATMENT>-<MEDIATOR> interaction"
+    },
+    {
+      "id": "JUSTIFY_IRRELEVANT_VARIABLES",
+      "desc": "Identifies irrelevant variables (<IRRELEVANT_VARIABLES>) and explains clearly why they are not confounders or mediators.",
+      "type": "justification",
+      "expected": "<IRRELEVANT_VARIABLES>"
+    },
+    {
+      "id": "JUSTIFY_CAUSAL_METHOD",
+      "desc": "Identifies the causal inference method used (e.g., regression with interaction) and explains its suitability.",
+      "type": "justification_keyword",
+      "keywords": [
+        "regression with interaction",
+        "structural equation modeling"
+      ],
+      "expected": ""
+    },
+    {
+      "id": "COMPARE_ADJUSTED_VS_UNADJUSTED",
+      "desc": "Compares adjusted causal conclusion (<ADJUSTED_DIRECTION>) clearly against naive observational conclusion.",
+      "type": "contrast_direction",
+      "expected": "<ADJUSTED_DIRECTION>"
+    },
+    {
+      "id": "PROVIDE_NUMERICAL_SUPPORT",
+      "desc": "Uses numerical evidence (adjusted treatment and interaction effects) to support causal claims.",
+      "type": "explicit_numerical",
+      "expected": "adjusted treatment and interaction effects"
+    },
+    {
+      "id": "ADDRESS_STATISTICAL_UNCERTAINTY",
+      "desc": "Clearly reports statistical uncertainty (confidence intervals, p-values, standard errors) and discusses implications for causal conclusions.",
+      "type": "uncertainty_interpretation",
+      "keywords": [
+        "confidence interval",
+        "p-value",
+        "standard error"
+      ],
+      "expected": ""
+    }
+  ],
+  "max_score": 8,
+  "scoring_method": "Assign 1 point per criterion if fully satisfied; sum total for final score."
+}

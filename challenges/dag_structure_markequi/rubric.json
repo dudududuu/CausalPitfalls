@@ -1,0 +1,73 @@
+{
+    "instructions": "Score each criterion 1 if the answer meets the specification, otherwise 0. Total = sum of scores.",
+    "criteria": [
+      {
+        "id": "LIST_FORWARD_CHAIN",
+        "type": "keyword",
+        "desc": "Includes the forward chain {VARIABLE_X1} -> {VARIABLE_X2} -> {VARIABLE_X3}",
+        "keywords": [
+          "{VARIABLE_X1} -> {VARIABLE_X2}",
+          "{VARIABLE_X2} -> {VARIABLE_X3}"
+        ]
+      },
+      {
+        "id": "LIST_REVERSE_CHAIN",
+        "type": "keyword",
+        "desc": "Includes the reverse chain {VARIABLE_X3} -> {VARIABLE_X2} -> {VARIABLE_X1}",
+        "keywords": [
+          "{VARIABLE_X3} -> {VARIABLE_X2}",
+          "{VARIABLE_X2} -> {VARIABLE_X1}"
+        ]
+      },
+      {
+        "id": "LIST_FORK",
+        "type": "keyword",
+        "desc": "Includes the fork {VARIABLE_X1} <- {VARIABLE_X2} -> {VARIABLE_X3}",
+        "keywords": [
+          "{VARIABLE_X1} <- {VARIABLE_X2}",
+          "{VARIABLE_X2} -> {VARIABLE_X3}"
+        ]
+      },
+      {
+        "id": "NO_EXTRA_STRUCTURES",
+        "type": "logical",
+        "desc": "Does not propose any DAG structures other than DAGs in {TRUE_GRAPH} or {EQUIVALENT_GRAPHS}. For example, it does not propose the chain {VARIABLE_X1} -> {VARIABLE_X2} -> {VARIABLE_X3} or the reverse chain {VARIABLE_X3} -> {VARIABLE_X2} -> {VARIABLE_X1}."
+      },
+      {
+        "id": "EXPLAIN_EQUIV_CLASS",
+        "type": "keyword",
+        "desc": "Mentions Markov equivalence or equivalence-class ambiguity",
+        "keywords": [
+          "Markov equivalent",
+          "equivalence class",
+          "cannot distinguish",
+          "uncertain"
+        ]
+      },
+      {
+        "id": "MENTION_CI_TEST",
+        "type": "keyword",
+        "desc": "Mentions the key conditional-independence test {VARIABLE_X1} independent of {VARIABLE_X3} conditional on {VARIABLE_X2}",
+        "keywords": [
+          "conditional independence",
+          "{VARIABLE_X1} independent of {VARIABLE_X3} given {VARIABLE_X2}",
+          "independent given {VARIABLE_X2}"
+        ]
+      },
+      {
+        "id": "REPORT_CONFIDENCE",
+        "type": "keyword",
+        "desc": "Provides uncertainty or confidence scores for each candidate DAG",
+        "keywords": [
+          "confidence",
+          "%",
+          "probable",
+          "likely",
+          "uncertain"
+        ]
+      }
+    ],
+    "scale": "0 or 1 per criterion",
+    "max_score": 7
+  }
+  

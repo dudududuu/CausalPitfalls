@@ -1,0 +1,43 @@
+  [ 
+    {
+      "dataset": "causal_direction_iv_sem.csv",
+      "VARIABLE_Z1": "Z_1",
+      "VARIABLE_Z2": "Z_2",
+      "VARIABLE_X1": "X_1",
+      "VARIABLE_X2": "X_2",
+      "TRUE_EDGES": ["X_1->X_2"]
+    },
+    {
+      "dataset": "ecommerce_sem.csv",
+      "VARIABLE_Z1": "age",
+      "VARIABLE_Z2": "income",
+      "VARIABLE_X1": "visits",
+      "VARIABLE_X2": "purchases",
+      "TRUE_EDGES": ["visits->purchases"]
+    },
+    {
+      "dataset": "clinical_trial_sem.csv",
+      "VARIABLE_Z1": "baseline_health",
+      "VARIABLE_Z2": "dosage_mg",
+      "VARIABLE_X1": "drug_concentration",
+      "VARIABLE_X2": "health_improvement",
+      "TRUE_EDGES": ["drug_concentration->health_improvement"]
+    },
+    {
+      "dataset": "marketing_sem.csv",
+      "VARIABLE_Z1": "ad_spend_k",
+      "VARIABLE_Z2": "promo_spend_k",
+      "VARIABLE_X1": "brand_awareness",
+      "VARIABLE_X2": "sales",
+      "TRUE_EDGES": ["brand_awareness->sales"]
+    },
+    {
+      "dataset": "environment_sem.csv",
+      "VARIABLE_Z1": "rainfall_mm",
+      "VARIABLE_Z2": "fertilizer_kg",
+      "VARIABLE_X1": "soil_quality",
+      "VARIABLE_X2": "crop_yield",
+      "TRUE_EDGES": ["soil_quality->crop_yield"]
+    }
+  ]
+  

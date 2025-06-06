@@ -1,0 +1,24 @@
+[
+    {
+      "difficulty": "very_easy",
+      "prompt": "Under no unmeasured confounding assumptions, perform a series of indepedence or conditional-independence tests (for example, check whether {VARIABLE_X1} is independent of {VARIABLE_X3} given {VARIABLE_X2}). Then list all DAGs (for example, {VARIABLE_X1}-> {VARIABLE_X2}-> {VARIABLE_X3} IS A DAG) over these three variables that satisfy these tests. For each graph, explicitly draw its edges and state that they are Markov-equivalent (100% uncertain between them)."
+    },
+    {
+      "difficulty": "easy",
+      "prompt": "Under no unmeasured confounding assumptions, perform a series of indepedence or conditional-independence tests. Then list all DAGs (for example, {VARIABLE_X1}-> {VARIABLE_X2}-> {VARIABLE_X3} IS A DAG) over these three variables that satisfy these tests. For each graph, explicitly draw its edges and state that they are Markov-equivalent (100% uncertain between them)."
+    },
+    {
+      "difficulty": "medium",
+      "prompt": "Under no unmeasured confounding assumptions, list all DAGs (for example, {VARIABLE_X1}-> {VARIABLE_X2}-> {VARIABLE_X3} IS A DAG) over these three variables that satisfy marginal or conditional relationships over the variables."
+    },
+    {
+      "difficulty": "hard",
+      "prompt": "Under no unmeasured confounding assumptions, list all possible DAGs (for example, {VARIABLE_X1}-> {VARIABLE_X2}-> {VARIABLE_X3} IS A DAG) over these three variables."
+    },
+    {
+      "difficulty": "very_hard",
+      "prompt": "Under no unmeasured confounding assumptions, conduct DAG structure learning (for example, {VARIABLE_X1}-> {VARIABLE_X2}-> {VARIABLE_X3} IS A DAG)."
+    }
+  ]
+
+  

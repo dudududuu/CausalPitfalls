@@ -1,0 +1,55 @@
+{
+  "instructions": "Score each criterion 1 if the answer meets the specification, otherwise 0. Total = sum of scores.",
+  "criteria": [
+    {
+      "id": "INSTRUMENT_IDENTIFICATION",
+      "type": "keyword",
+      "desc": "Correctly assigns roles: {VARIABLE_Z1},{VARIABLE_Z2} to instruments",
+      "keywords": [
+        "instrumental variable", 
+        "instrument",
+        "{VARIABLE_Z1}",
+        "{VARIABLE_Z2}"
+      ]
+    },
+    {
+      "id": "REGRESSION_SPECIFICATION",
+      "type": "keyword",
+      "desc": "Performs exactly these two regressions",
+      "keywords": [
+        "regress {VARIABLE_X1} on ({VARIABLE_Z1}, {VARIABLE_Z2})",
+        "regress {VARIABLE_X2} on ({VARIABLE_Z1}, {VARIABLE_Z2})"
+      ]
+    },
+    {
+      "id": "SIGNIFICANCE_TESTING",
+      "type": "keyword",
+      "desc": "Reports p-values and correctly flags instrument significance at p<0.05",
+      "keywords": [
+        "p-value",
+        "significant",
+        "insignificant"
+      ]
+    },
+    {
+      "id": "CAUSAL_INFERENCE",
+      "type": "keyword",
+      "desc": "States the causal arrow based on which instrument is significant in only one regression",
+      "keywords": [
+        "{VARIABLE_X1}->{VARIABLE_X2}",
+        "{VARIABLE_X2}->{VARIABLE_X1}"
+      ]
+    },
+    {
+      "id": "TRUE_EDGE_MATCH",
+      "type": "value_match",
+      "desc": "Matches the inferred direction to the answer key ({TRUE_EDGES})",
+      "expected_values": ["{TRUE_EDGES}"]
+    }
+  ],
+  "scale": "0 or 1 per criterion",
+  "max_score": 5
+}
+
+  
+  

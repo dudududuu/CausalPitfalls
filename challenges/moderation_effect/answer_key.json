@@ -1,0 +1,47 @@
+[   {
+    "dataset": "moderation_effect_sem.csv",
+    "VARIABLE_X1": "severity",
+    "VARIABLE_X2": "dosage",
+    "VARIABLE_Y": "reduction",
+    "DOSAGE_COEF": 1,
+    "SEVERITY_COEF": -0.5,
+    "INTERACTION_COEF": -1.2
+},
+    {
+      "dataset": "arthritis_pain_reduction.csv",
+      "VARIABLE_X1": "osteoarthritis_severity",
+      "VARIABLE_X2": "analgesic_dosage_mg",
+      "VARIABLE_Y": "pain_score_reduction",
+      "DOSAGE_COEF": 1.0,
+      "SEVERITY_COEF": -0.5,
+      "INTERACTION_COEF": -1.2
+    },
+    {
+      "dataset": "infection_bacteria_reduction.csv",
+      "VARIABLE_X1": "infection_severity_score",
+      "VARIABLE_X2": "antibiotic_dosage_mg",
+      "VARIABLE_Y": "bacterial_count_decrease",
+      "DOSAGE_COEF": 1.2,
+      "SEVERITY_COEF": -0.4,
+      "INTERACTION_COEF": -1.3
+    },
+    {
+      "dataset": "depression_symptom_reduction.csv",
+      "VARIABLE_X1": "depression_severity_index",
+      "VARIABLE_X2": "therapy_hours_per_week",
+      "VARIABLE_Y": "symptom_score_decrease",
+      "DOSAGE_COEF": 0.9,
+      "SEVERITY_COEF": -0.7,
+      "INTERACTION_COEF": -1.0
+    },
+    {
+      "dataset": "hypertension_bp_reduction.csv",
+      "VARIABLE_X1": "hypertension_stage",
+      "VARIABLE_X2": "drug_dosage_mg",
+      "VARIABLE_Y": "systolic_bp_reduction",
+      "DOSAGE_COEF": 1.05,
+      "SEVERITY_COEF": -0.55,
+      "INTERACTION_COEF": -1.25
+    }
+  ]
+  

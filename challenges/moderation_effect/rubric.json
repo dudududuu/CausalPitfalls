@@ -1,0 +1,53 @@
+{
+    "instructions": "Score each criterion 1 if the answer meets the specification, otherwise 0. Total = sum of scores.",
+    "criteria": [
+      {
+        "id": "REPORT_DOSAGE_COEF",
+        "type": "keyword",
+        "desc": "Reports the coefficient and significance for {VARIABLE_X2}",
+        "keywords": ["dosage", "DOSAGE_COEF"]
+      },
+      {
+        "id": "REPORT_SEVERITY_COEF",
+        "type": "keyword",
+        "desc": "Reports the coefficient and significance for {VARIABLE_X1}",
+        "keywords": ["severity", "SEVERITY_COEF"]
+      },
+      {
+        "id": "REPORT_INTERACTION_COEF",
+        "type": "keyword",
+        "desc": "Reports the coefficient and significance for the interaction term",
+        "keywords": ["interaction", "INTERACTION_COEF"]
+      },
+      {
+        "id": "INTERPRET_INTERACTION",
+        "type": "keyword",
+        "desc": "Provides a clear interpretation of how the interaction modifies the dosage effect",
+        "keywords": [
+          "effect of dosage on reduction is moderated",
+          "stronger at lower levels of severity",
+          "weaker at higher levels of severity",
+          "diminishes"
+        ]
+      },
+      {
+        "id": "CHECK_MODEL_ASSUMPTIONS",
+        "type": "keyword",
+        "desc": "Mentions residual diagnostics or model assumption checks",
+        "keywords": ["Durbin-Watson", "Omnibus", "Jarque-Bera", "residuals"]
+      },
+      {
+        "id": "STATE_CONCLUSION",
+        "type": "keyword",
+        "desc": "Summarizes the overall conclusion about moderation and dosing implications",
+        "keywords": [
+          "moderated by severity",
+          "important to consider both dosage and severity",
+          "tailor dosage to severity"
+        ]
+      }
+    ],
+    "scale": "0 or 1 per criterion",
+    "max_score": 7
+  }
+  

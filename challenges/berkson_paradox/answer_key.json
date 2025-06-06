@@ -1,0 +1,74 @@
+
+  [ {
+    "dataset": "hospital_data.csv",
+    "VARIABLE_X": "Disease A",
+    "VARIABLE_Y": "Disease B",
+    "COLLIDER_VARIABLE": "Hospitalization",
+    "ASSUMPTION_INDEPENDENCE": "independent",
+    "TRUE_RELATIONSHIP": "no association",
+    "NAIVE_CONDITIONAL_1": 0.0890,
+    "NAIVE_CONDITIONAL_2": 0.7885,
+    "CORRECTED_CONDITIONAL_1": 0.0500,
+    "CORRECTED_CONDITIONAL_2": 0.0500,
+    "CORRECTION_METHOD": "Inverse Probability Weighting (IPW)",
+    "TOLERANCE": 0.02
+  },
+    {
+      "dataset": "hiring_bias.csv",
+      "VARIABLE_X": "Gender",
+      "VARIABLE_Y": "Experience",
+      "COLLIDER_VARIABLE": "Hired",
+      "ASSUMPTION_INDEPENDENCE": "independent",
+      "TRUE_RELATIONSHIP": "no association",
+      "NAIVE_CONDITIONAL_1": 0.8571428571428572,
+      "NAIVE_CONDITIONAL_2": 0.5625,
+      "CORRECTED_CONDITIONAL_1": 0.5,
+      "CORRECTED_CONDITIONAL_2": 0.5,
+      "CORRECTION_METHOD": "Inverse Probability Weighting (IPW)",
+      "TOLERANCE": 0.02
+    },
+    {
+      "dataset": "admission_bias.csv",
+      "VARIABLE_X": "TestHigh",
+      "VARIABLE_Y": "ExtraHigh",
+      "COLLIDER_VARIABLE": "Admitted",
+      "ASSUMPTION_INDEPENDENCE": "independent",
+      "TRUE_RELATIONSHIP": "no association",
+      "NAIVE_CONDITIONAL_1": 0.9433962264150942,
+      "NAIVE_CONDITIONAL_2": 0.5588235294117646,
+      "CORRECTED_CONDITIONAL_1": 0.4,
+      "CORRECTED_CONDITIONAL_2": 0.4,
+      "CORRECTION_METHOD": "Inverse Probability Weighting (IPW)",
+      "TOLERANCE": 0.02
+    },
+    {
+      "dataset": "loan_approval_bias.csv",
+      "VARIABLE_X": "Creditworthy",
+      "VARIABLE_Y": "Employed",
+      "COLLIDER_VARIABLE": "Approved",
+      "ASSUMPTION_INDEPENDENCE": "independent",
+      "TRUE_RELATIONSHIP": "no association",
+      "NAIVE_CONDITIONAL_1": 0.967741935483871,
+      "NAIVE_CONDITIONAL_2": 0.504424778761062,
+      "CORRECTED_CONDITIONAL_1": 0.3,
+      "CORRECTED_CONDITIONAL_2": 0.3,
+      "CORRECTION_METHOD": "Inverse Probability Weighting (IPW)",
+      "TOLERANCE": 0.02
+    },
+    {
+      "dataset": "movie_success_bias.csv",
+      "VARIABLE_X": "HighBudget",
+      "VARIABLE_Y": "StarPower",
+      "COLLIDER_VARIABLE": "Successful",
+      "ASSUMPTION_INDEPENDENCE": "independent",
+      "TRUE_RELATIONSHIP": "no association",
+      "NAIVE_CONDITIONAL_1": 0.8823529411764706,
+      "NAIVE_CONDITIONAL_2": 0.4285714285714286,
+      "CORRECTED_CONDITIONAL_1": 0.2,
+      "CORRECTED_CONDITIONAL_2": 0.2,
+      "CORRECTION_METHOD": "Inverse Probability Weighting (IPW)",
+      "TOLERANCE": 0.02
+    }
+  ]
+  
+  

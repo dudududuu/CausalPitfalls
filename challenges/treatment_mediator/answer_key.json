@@ -1,0 +1,107 @@
+
+[ {
+  "dataset": "economic_stimulus_interaction.csv",
+  "TREATMENT": "stimulus_policy",
+  "OUTCOME": "employment_rate",
+  "TRUE_CONFOUNDERS": [
+    "market_volatility",
+    "baseline_economic_growth"
+  ],
+  "MEDIATOR": "consumer_confidence",
+  "IRRELEVANT_VARIABLES": [
+    "unrelated_indicator"
+  ],
+  "INTERACTION_TERM": "stimulus_policy*consumer_confidence",
+  "OVERALL_DIRECTION": "positive",
+  "ADJUSTED_DIRECTION": "positive",
+  "OVERALL_MEAN_TREATMENT": "260.3645",
+  "OVERALL_MEAN_NO_TREATMENT": "117.7695",
+  "ADJUSTED_TREATMENT_EFFECT": "1.3405",
+  "INTERACTION_EFFECT": "2.5033",
+  "TOLERANCE": 0.05
+},
+  {
+    "dataset": "job_training_policy.csv",
+    "TREATMENT": "training_program",
+    "OUTCOME": "employment_growth",
+    "TRUE_CONFOUNDERS": [
+      "labor_market_volatility",
+      "baseline_employment_trend"
+    ],
+    "MEDIATOR": "employer_confidence",
+    "IRRELEVANT_VARIABLES": [
+      "irrelevant_index"
+    ],
+    "INTERACTION_TERM": "training_program*employer_confidence",
+    "OVERALL_DIRECTION": "positive",
+    "ADJUSTED_DIRECTION": "positive",
+    "OVERALL_MEAN_TREATMENT": 220.3228,
+    "OVERALL_MEAN_NO_TREATMENT": 117.0906,
+    "ADJUSTED_TREATMENT_EFFECT": 10.1529,
+    "INTERACTION_EFFECT": 1.8241,
+    "TOLERANCE": 0.05
+  },
+  {
+    "dataset": "education_subsidy_policy.csv",
+    "TREATMENT": "subsidy_policy",
+    "OUTCOME": "graduation_rate",
+    "TRUE_CONFOUNDERS": [
+      "education_quality_index",
+      "baseline_graduation_rate"
+    ],
+    "MEDIATOR": "school_enrollment",
+    "IRRELEVANT_VARIABLES": [
+      "irrelevant_index"
+    ],
+    "INTERACTION_TERM": "subsidy_policy*school_enrollment",
+    "OVERALL_DIRECTION": "positive",
+    "ADJUSTED_DIRECTION": "positive",
+    "OVERALL_MEAN_TREATMENT": 210.9638,
+    "OVERALL_MEAN_NO_TREATMENT": 117.8511,
+    "ADJUSTED_TREATMENT_EFFECT": 1.2042,
+    "INTERACTION_EFFECT": 1.8046,
+    "TOLERANCE": 0.05
+  },
+  {
+    "dataset": "tax_incentive_policy.csv",
+    "TREATMENT": "tax_incentive",
+    "OUTCOME": "sales_growth",
+    "TRUE_CONFOUNDERS": [
+      "consumer_demand_index",
+      "baseline_retail_sales"
+    ],
+    "MEDIATOR": "consumer_spending",
+    "IRRELEVANT_VARIABLES": [
+      "irrelevant_index"
+    ],
+    "INTERACTION_TERM": "tax_incentive*consumer_spending",
+    "OVERALL_DIRECTION": "positive",
+    "ADJUSTED_DIRECTION": "positive",
+    "OVERALL_MEAN_TREATMENT": 231.8738,
+    "OVERALL_MEAN_NO_TREATMENT": 117.6961,
+    "ADJUSTED_TREATMENT_EFFECT": 3.1524,
+    "INTERACTION_EFFECT": 2.1613,
+    "TOLERANCE": 0.05
+  },
+  {
+    "dataset": "infrastructure_spending_policy.csv",
+    "TREATMENT": "infrastructure_spend",
+    "OUTCOME": "investment_return",
+    "TRUE_CONFOUNDERS": [
+      "construction_cost_index",
+      "baseline_investment_rate"
+    ],
+    "MEDIATOR": "construction_activity",
+    "IRRELEVANT_VARIABLES": [
+      "irrelevant_index"
+    ],
+    "INTERACTION_TERM": "infrastructure_spend*construction_activity",
+    "OVERALL_DIRECTION": "positive",
+    "ADJUSTED_DIRECTION": "positive",
+    "OVERALL_MEAN_TREATMENT": 246.517,
+    "OVERALL_MEAN_NO_TREATMENT": 117.5289,
+    "ADJUSTED_TREATMENT_EFFECT": 5.0214,
+    "INTERACTION_EFFECT": 2.4272,
+    "TOLERANCE": 0.05
+  }
+]

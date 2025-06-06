@@ -1,0 +1,48 @@
+{
+  "criteria": [
+    {
+      "id": "DEFINITION_GLOBAL_NECESSITY",
+      "desc": "Define global necessity of {VARIABLE_X} for {VARIABLE_Y} > {THRESHOLD} using correct counterfactual logic",
+      "type": "keyword",
+      "keywords": ["global necessary", "{VARIABLE_X}", "{THRESHOLD}", "counterfactual"]
+    },
+    {
+      "id": "DEFINITION_GLOBAL_SUFFICIENCY",
+      "desc": "Define global sufficiency of {VARIABLE_X} for {VARIABLE_Y} > {THRESHOLD} using correct counterfactual logic",
+      "type": "keyword",
+      "keywords": ["global sufficient", "{VARIABLE_X}", "{THRESHOLD}", "counterfactual"]
+    },
+    {
+      "id": "THRESHOLD_MENTION",
+      "desc": "Mention threshold value {THRESHOLD} when defining necessity and sufficiency",
+      "type": "keyword",
+      "keywords": ["{THRESHOLD}"]
+    },
+    {
+      "id": "OUTCOME_INTERVENTION_ANALYSIS",
+      "desc": "Analyze outcomes of interventions on {VARIABLE_X} under multiple contexts defined by {CONTEXT_1} and {CONTEXT_2}",
+      "type": "logical",
+      "keywords": ["{CONTEXT_1}", "{CONTEXT_2}", "intervention", "outcome"]
+    },
+    {
+      "id": "POTENTIAL_OUTCOMES",
+      "desc": "Describe potential outcomes Y when {VARIABLE_X} is varied",
+      "type": "logical",
+      "keywords": ["Y_{x=0}", "Y_{x=1}", "potential outcome"]
+    },
+    {
+      "id": "ILLUSTRATIVE_EXAMPLES",
+      "desc": "Provide examples indicating conditions where {VARIABLE_X} is or is not necessary/sufficient",
+      "type": "keyword",
+      "keywords": ["example", "{CONTEXT_1}", "{CONTEXT_2}"]
+    },
+    {
+      "id": "CORRECT_FINAL_CLASSIFICATION",
+      "desc": "Correctly classify {VARIABLE_X} as {IS_NECESSARY} globally necessary and {IS_SUFFICIENT} globally sufficient for {VARIABLE_Y} > {THRESHOLD}",
+      "type": "logical",
+      "keywords": ["{VARIABLE_X}", "{VARIABLE_Y}", "{THRESHOLD}"]
+    }
+  ],
+  "max_score": 7,
+  "scale": "Score each criterion 0 or 1; total is sum of scores (harder questions expected to have lower total scores)."
+}

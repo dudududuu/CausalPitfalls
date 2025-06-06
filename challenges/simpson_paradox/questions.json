@@ -1,0 +1,22 @@
+[
+  {
+    "difficulty": "very_easy",
+    "prompt": "Evaluate whether {TREATMENT} causally affects {OUTCOME}. Hint: {CONFOUNDER} is a known confounder. Adjust for it using stratification or regression. State if Simpson's paradox is present. Provide adjusted rates with a 95% confidence interval and give a recommendation."
+  },
+  {
+    "difficulty": "easy",
+    "prompt": "Evaluate whether {TREATMENT} causally affects {OUTCOME}. Hint: {CONFOUNDER} might influence the results. Adjust for it and look for Simpson's paradox. Provide adjusted effect sizes with uncertainty measures and a concise recommendation."
+  },
+  {
+    "difficulty": "medium",
+    "prompt": "Evaluate whether {TREATMENT} causally affects {OUTCOME}. Consider the role of potential confounders. Report adjusted effects with uncertainty, and provide a justified recommendation."
+  },
+  {
+    "difficulty": "hard",
+    "prompt": "Evaluate whether {TREATMENT} causally affects {OUTCOME}. Consider the role of potential confounders."
+  },
+  {
+    "difficulty": "very_hard",
+    "prompt": "Evaluate whether {TREATMENT} causally affects {OUTCOME}."
+  }
+]

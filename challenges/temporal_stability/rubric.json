@@ -1,0 +1,55 @@
+{
+    "instructions": "Score each criterion 1 if the analysis includes the specified element, otherwise 0. Total = sum of scores.",
+    "criteria": [
+      {
+            "id": "IDENTIFY_PERIODS",
+            "type": "keyword",
+            "desc": "Mentions and distinguishes {VARIABLE_T} 1 and {VARIABLE_T} 2",
+            "keywords": [
+              "{VARIABLE_T} 1",
+              "{VARIABLE_T} 2"
+            ]
+      },
+      {
+        "id": "FIT_SEPARATE_REGRESSIONS",
+        "type": "keyword",
+        "desc": "Describes fitting separate linear regressions of {VARIABLE_Y} on {VARIABLE_X2} for each period",
+        "keywords": [
+          "regress {VARIABLE_Y} on {VARIABLE_X2} for {VARIABLE_T} 1",
+          "regress {VARIABLE_Y} on {VARIABLE_X2} for {VARIABLE_T} 2"
+        ]
+      },
+      {
+        "id": "REPORT_COEF_PERIOD1",
+        "type": "keyword",
+        "desc": "Reports the {VARIABLE_X2} coefficient {EFFECT_A} within {TOLERANCE}.",
+        "keywords": ["{VARIABLE_X2}", "{VARIABLE_T} 1", "p-value", "EFFECT_A"]
+      },
+      {
+        "id": "REPORT_COEF_PERIOD2",
+        "type": "keyword",
+        "desc": "Reports the {VARIABLE_X2} coefficient {EFFECT_B} within {TOLERANCE}.",
+        "keywords": ["{VARIABLE_X2}", "{VARIABLE_T} 2", "p-value", "EFFECT_B"]
+      },
+      {
+        "id": "MENTION_SIGNIFICANCE",
+        "type": "keyword",
+        "desc": "Mentions that the p-value for {VARIABLE_X2} is statistically significant in both periods",
+        "keywords": ["p-value", "significant"]
+      },
+      {
+        "id": "INTERPRET_EFFECT_CHANGE",
+        "type": "keyword",
+        "desc": "Interprets that the strength of the {VARIABLE_X2} effect decreased from {VARIABLE_T} 1 to {VARIABLE_T} 2",
+        "keywords": ["strong and significant relationship", "weaker relationship", "diminished"]
+      },
+      {
+        "id": "CONCLUDE_TEMPORAL_VARIATION",
+        "type": "keyword",
+        "desc": "Concludes that the effect of {VARIABLE_X2} varies over time",
+        "keywords": ["varies significantly over time", "temporal variation"]
+      }
+    ],
+    "scale": "0 or 1 per criterion",
+    "max_score": 7
+  }

@@ -1,0 +1,22 @@
+[
+    {
+      "difficulty": "very_easy",
+      "prompt": "Estimate the level of {VARIABLE_Y} when my grandmother ({VARIABLE_X1} = 65) takes 1 unit of {VARIABLE_T}. You may fit linear models of {VARIABLE_Y} on {VARIABLE_T} and {VARIABLE_X2} under different lvels of {VARIABLE_X1}, for example, {VARIABLE_X1} can be divided into 2 groups, {GROUP_1} and {GROUP_2}. After fitting these two linear models, you can interpret the results. Get back to the questions, could you answer the questions based on my provided information? If not, please provide the information you need."
+    },
+    {
+      "difficulty": "easy",
+      "prompt": "Estimate the level of {VARIABLE_Y} when my grandmother ({VARIABLE_X1} = 65) takes 1 unit of {VARIABLE_T}. You may fit linear models of {VARIABLE_Y} on {VARIABLE_T} and {VARIABLE_X2} under different lvels of {VARIABLE_X1}, for example, {VARIABLE_X1} can be divided into 2 groups, {GROUP_1} and {GROUP_2}. Get back to the questions, could you answer the questions based on my provided information?"
+    },
+    {
+      "difficulty": "medium",
+      "prompt": "Estimate the level of {VARIABLE_Y} when my grandmother ({VARIABLE_X1} = 65) takes 1 unit of {VARIABLE_T}. You may fit linear models of {VARIABLE_Y} on {VARIABLE_T} and {VARIABLE_X2} under different lvels of {VARIABLE_X1}. Get back to the questions, could you answer the questions based on my provided information?"
+    },
+    {
+      "difficulty": "hard",
+      "prompt": "Estimate the level of {VARIABLE_Y} when my grandmother ({VARIABLE_X1} = 65) takes 1 unit of {VARIABLE_T}. You may fit linear models of {VARIABLE_Y} on {VARIABLE_T} and {VARIABLE_X2} under different lvels of {VARIABLE_X1}."
+    },
+    {
+      "difficulty": "very_hard",
+      "prompt": "Estimate the level of {VARIABLE_Y} when my grandmother ({VARIABLE_X1} = 65) takes 1 unit of {VARIABLE_T}."
+    }
+  ]

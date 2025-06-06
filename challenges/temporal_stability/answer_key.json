@@ -1,0 +1,47 @@
+[   {
+    "dataset": "temporal_stability_sem.csv",
+    "VARIABLE_X1": "time",
+    "VARIABLE_X2": "User_invites",
+    "VARIABLE_Y": "User_signups",
+    "EFFECT_A": 1,
+    "EFFECT_B": 0.3,
+    "TOLERANCE": 0.1
+},
+    {
+      "dataset": "temporal_variant1.csv",
+      "VARIABLE_X1": "time",
+      "VARIABLE_X2": "User_invites",
+      "VARIABLE_Y": "User_signups",
+      "EFFECT_A": 1.2,
+      "EFFECT_B": 0.4,
+      "TOLERANCE": 0.1
+    },
+    {
+      "dataset": "temporal_variant2.csv",
+      "VARIABLE_X1": "time",
+      "VARIABLE_X2": "User_invites",
+      "VARIABLE_Y": "User_signups",
+      "EFFECT_A": 0.8,
+      "EFFECT_B": 0.2,
+      "TOLERANCE": 0.1
+    },
+    {
+      "dataset": "temporal_variant3.csv",
+      "VARIABLE_X1": "time",
+      "VARIABLE_X2": "User_invites",
+      "VARIABLE_Y": "User_signups",
+      "EFFECT_A": 1.0,
+      "EFFECT_B": 0.5,
+      "TOLERANCE": 0.1
+    },
+    {
+      "dataset": "temporal_variant4.csv",
+      "VARIABLE_X1": "time",
+      "VARIABLE_X2": "User_invites",
+      "VARIABLE_Y": "User_signups",
+      "EFFECT_A": 0.9,
+      "EFFECT_B": 0.3,
+      "TOLERANCE": 0.1
+    }
+  ]
+  

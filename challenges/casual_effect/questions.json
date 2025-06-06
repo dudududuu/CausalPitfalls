@@ -1,0 +1,22 @@
+[
+  {
+    "difficulty": "very_easy",
+    "prompt": "Evaluate whether {TREATMENT} causally affects {OUTCOME}. Use inverse probability weighting (IPTW) or doubly robust estimation addressing all true confounders: {TRUE_CONFOUNDERS}. Define your causal estimand ({CAUSAL_ESTIMAND}). Provide the numerical causal estimate within ±{TOLERANCE} of the true effect ({TRUE_CAUSAL_EFFECT}), report confidence intervals or standard errors, identify and exclude irrelevant features: {IRRELEVANT_FEATURES}, perform at least one diagnostic check, and discuss potential limitations or assumptions."
+  },
+  {
+    "difficulty": "easy",
+    "prompt": "Evaluate whether {TREATMENT} causally affects {OUTCOME}. Adjust for time-dependent confounding involving {TRUE_CONFOUNDERS}. Define your causal estimand ({CAUSAL_ESTIMAND}). Provide adjusted causal effect size with uncertainty measures, identify irrelevant features ({IRRELEVANT_FEATURES})."
+  },
+  {
+    "difficulty": "medium",
+    "prompt": "Evaluate whether {TREATMENT} causally affects {OUTCOME}. Adjust for confounders and consider dynamic or time-dependent aspects. Define your causal estimand ({CAUSAL_ESTIMAND})."
+  },
+  {
+    "difficulty": "hard",
+    "prompt": "Evaluate whether {TREATMENT} causally affects {OUTCOME}. Define your causal estimand ({CAUSAL_ESTIMAND})."
+  },
+  {
+    "difficulty": "very_hard",
+    "prompt": "Evaluate whether {TREATMENT} causally affects {OUTCOME}, and state your causal conclusion."
+  }
+]

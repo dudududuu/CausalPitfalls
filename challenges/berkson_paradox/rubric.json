@@ -1,0 +1,37 @@
+{
+    "criteria": [
+      {
+        "id": "DAG_PROPOSAL",
+        "desc": "Proposes a causal DAG representing collider structure",
+        "type": "keyword",
+        "keywords": ["collider", "DAG", "hospitalization", "graphical model"]
+      },
+      {
+        "id": "ASSUMPTION_INDEPENDENCE",
+        "desc": "States independence assumption between diseases A and B",
+        "type": "keyword",
+        "keywords": ["independent", "no correlation", "unrelated"]
+      },
+      {
+        "id": "ASSUMPTION_CHECK",
+        "desc": "Consider statistical tests or sensitivity analyses to validate independence assumption",
+        "type": "keyword",
+        "keywords": ["sensitivity analysis", "robustness check", "validation"]
+      },
+      {
+        "id": "BIAS_CORRECTION",
+        "desc": "Suggests a valid collider bias correction method such as IPW or selection models",
+        "type": "keyword",
+        "keywords": ["IPW", "inverse probability weighting", "selection model", "Heckman"]
+      },
+      {
+        "id": "CORRECT_CONCLUSION",
+        "desc": "Clealry notice the possiblity of no association between diseases after proper bias correction",
+        "type": "direction",
+        "target": "no association"
+      }
+    ],
+    "max_score": 5,
+    "scale": "Each criterion scored 0-1 (No/Yes); total = sum of criteria."
+  }
+  

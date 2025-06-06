@@ -1,0 +1,57 @@
+[
+    {
+    "dataset": "patient_treatment_data.csv",
+    "TREATMENT": "secondary_treatment",
+    "OUTCOME": "recovery",
+    "TRUE_CONFOUNDERS": ["age", "initial_severity", "followup_severity", "initial_treatment"],
+    "IRRELEVANT_FEATURES": ["socioeconomic_status", "random_noise"],
+    "CAUSAL_METHOD": ["IPTW", "inverse probability weighting", "doubly robust"],
+    "CAUSAL_ESTIMAND": "ATE",
+    "TRUE_CAUSAL_EFFECT": 0.518,
+    "TOLERANCE": 0.05
+    },
+    {
+    "dataset": "marketing_offer_data.csv",
+    "TREATMENT": "special_offer",
+    "OUTCOME": "purchase",
+    "TRUE_CONFOUNDERS": ["tenure_months", "base_engagement", "initial_offer", "followup_engagement"],
+    "IRRELEVANT_FEATURES": ["region", "noise_factor"],
+    "CAUSAL_METHOD": ["IPTW", "inverse probability weighting", "doubly robust"],
+    "CAUSAL_ESTIMAND": "ATE",
+    "TRUE_CAUSAL_EFFECT": 0.351,
+    "TOLERANCE": 0.05
+    },
+    {
+    "dataset": "device_failure_data.csv",
+    "TREATMENT": "patch_v2",
+    "OUTCOME": "failure",
+    "TRUE_CONFOUNDERS": ["usage_hours", "baseline_error", "patch_v1", "post_patch_error"],
+    "IRRELEVANT_FEATURES": ["model_type", "random_noise"],
+    "CAUSAL_METHOD": ["IPTW", "inverse probability weighting", "doubly robust"],
+    "CAUSAL_ESTIMAND": "ATE",
+    "TRUE_CAUSAL_EFFECT": 0.363,
+    "TOLERANCE": 0.05
+    },
+    {
+    "dataset": "student_tutoring_data.csv",
+    "TREATMENT": "tutoring_round2",
+    "OUTCOME": "passed_final",
+    "TRUE_CONFOUNDERS": ["pretest_score", "struggled", "tutoring_round1", "posttest_improved"],
+    "IRRELEVANT_FEATURES": ["major", "noise"],
+    "CAUSAL_METHOD": ["IPTW", "inverse probability weighting", "doubly robust"],
+    "CAUSAL_ESTIMAND": "ATE",
+    "TRUE_CAUSAL_EFFECT": 0.213,
+    "TOLERANCE": 0.05
+    },
+    {
+    "dataset": "machine_maintenance_data.csv",
+    "TREATMENT": "maintenance_round2",
+    "OUTCOME": "breakdown",
+    "TRUE_CONFOUNDERS": ["equipment_age", "initial_wear", "maintenance_round1", "wear_after1"],
+    "IRRELEVANT_FEATURES": ["plant_id", "noise_var"],
+    "CAUSAL_METHOD": ["IPTW", "inverse probability weighting", "doubly robust"],
+    "CAUSAL_ESTIMAND": "ATE",
+    "TRUE_CAUSAL_EFFECT": 0.406,
+    "TOLERANCE": 0.05
+    }
+    ]

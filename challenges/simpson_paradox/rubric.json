@@ -1,0 +1,84 @@
+{
+    "criteria": [
+        {
+            "id": "PARADOX_RECOGNITION",
+            "desc": "Recognizes Simpson's paradox or describes a reversal after adjusting for {CONFOUNDER}",
+            "type": "keyword",
+            "keywords": [
+                "Simpson",
+                "reversal",
+                "aggregation bias",
+                "Simpson's paradox"
+            ]
+        },
+        {
+            "id": "ADJUSTMENT_METHOD",
+            "desc": "Proposes or applies appropriate adjustment method for {CONFOUNDER} (e.g., stratification, regression, IPTW)",
+            "type": "keyword",
+            "keywords": [
+                "stratify",
+                "stratification",
+                "Mantel",
+                "logistic regression",
+                "control for {CONFOUNDER}",
+                "IPTW",
+                "inverse probability weighting"
+            ]
+        },
+        {
+            "id": "CORRECT_CAUSAL_CONCLUSION",
+            "desc": "States correct causal direction (overall: {OVERALL_DIRECTION}, {LEVEL1}: {DIRECTION_LEVEL1}, {LEVEL2}: {DIRECTION_LEVEL2})",
+            "type": "direction",
+            "target": "{OVERALL_DIRECTION}, {DIRECTION_LEVEL1}, {DIRECTION_LEVEL2}"
+        },
+        {
+            "id": "STATISTICAL_JUSTIFICATION",
+            "desc": "Provides at least one statistical measure of uncertainty (confidence interval, SE, or p-value)",
+            "type": "keyword",
+            "keywords": [
+                "CI",
+                "confidence interval",
+                "standard error",
+                "SE",
+                "p ="
+            ]
+        },
+        {
+            "id": "CORRECT_NUMERIC_OVERALL",
+            "desc": "Provides numeric overall rates within ±{TOLERANCE} of targets ({OVERALL_P_YES}, {OVERALL_P_NO})",
+            "type": "numeric",
+            "targets": [
+                "{OVERALL_P_YES}",
+                "{OVERALL_P_NO}"
+            ],
+            "tolerance": "{TOLERANCE}"
+        },
+        {
+            "id": "CORRECT_NUMERIC_SUBGROUP",
+            "desc": "Provides numeric subgroup rates within ±{TOLERANCE} of targets ({P_LEVEL1_YES}, {P_LEVEL1_NO}, {P_LEVEL2_YES}, {P_LEVEL2_NO})",
+            "type": "numeric_any",
+            "targets": [
+                "{P_LEVEL1_YES}",
+                "{P_LEVEL1_NO}",
+                "{P_LEVEL2_YES}",
+                "{P_LEVEL2_NO}"
+            ],
+            "tolerance": "{TOLERANCE}"
+        },
+        {
+            "id": "FINAL_RECOMMENDATION",
+            "desc": "Provides correct final recommendation regarding use of {TREATMENT}",
+            "type": "keyword",
+            "keywords": [
+                "recommend",
+                "use",
+                "avoid",
+                "should",
+                "not recommended",
+                "recommended"
+            ]
+        }
+    ],
+    "max_score": 7,
+    "scale": "Each criterion scored 0-1 (No/Yes); total = sum of criteria."
+}

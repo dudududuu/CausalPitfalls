@@ -1,0 +1,72 @@
+{
+  "criteria": [
+    {
+      "id": "IDENTIFY_TRUE_CONFOUNDERS",
+      "desc": "Identifies the true confounders (<TRUE_CONFOUNDERS>) and explains their influence on both the treatment and outcome.",
+      "type": "justification",
+      "expected": "<TRUE_CONFOUNDERS>"
+    },
+    {
+      "id": "IDENTIFY_MEDIATORS",
+      "desc": "Identifies mediators in the correct sequential order (<MEDIATORS>) and explains how each mediator transmits the effect of treatment to the outcome.",
+      "type": "justification",
+      "expected": "<MEDIATORS>"
+    },
+    {
+      "id": "JUSTIFY_IRRELEVANT_VARIABLES",
+      "desc": "Identifies irrelevant variables (<IRRELEVANT_VARIABLES>) and explains why they are not confounders or mediators.",
+      "type": "justification",
+      "expected": "<IRRELEVANT_VARIABLES>"
+    },
+    {
+      "id": "JUSTIFY_ADJUSTMENT_METHOD",
+      "desc": "States the chosen causal inference method (structural equation modeling, path-specific effects, counterfactual analysis) and explains suitability.",
+      "type": "justification_keyword",
+      "keywords": [
+        "structural equation modeling",
+        "path-specific effects",
+        "counterfactual analysis"
+      ],
+      "expected": ""
+    },
+    {
+      "id": "CONTRAST_ADJUSTED_UNADJUSTED",
+      "desc": "Correctly contrasts adjusted causal conclusion (<ADJUSTED_DIRECTION>) against naive observational conclusion.",
+      "type": "contrast_direction",
+      "expected": "<ADJUSTED_DIRECTION>"
+    },
+    {
+      "id": "NUMERICAL_JUSTIFICATION",
+      "desc": "Uses adjusted numerical results (e.g., adjusted differences, regression coefficients) to support causal conclusions.",
+      "type": "explicit_numerical",
+      "expected": "adjusted numerical results (regression coefficients, differences)"
+    },
+    {
+      "id": "STATISTICAL_UNCERTAINTY",
+      "desc": "Reports statistical uncertainty (confidence interval, p-value, standard error) and discusses its impact on causal interpretation.",
+      "type": "uncertainty_interpretation",
+      "keywords": [
+        "confidence interval",
+        "CI",
+        "p-value",
+        "standard error",
+        "SE"
+      ],
+      "expected": ""
+    },
+    {
+      "id": "OBSERVATIONAL_LIMITATIONS",
+      "desc": "States observational limitations (confounding, omitted variables) and explains their impact on the reliability of causal conclusions.",
+      "type": "limitation",
+      "keywords": [
+        "observational",
+        "confounding",
+        "omitted variables",
+        "limitations"
+      ],
+      "expected": ""
+    }
+  ],
+  "max_score": 8,
+  "scoring_method": "Each criterion scores 1 if fully met, otherwise 0. Total score is the sum of criteria met."
+}

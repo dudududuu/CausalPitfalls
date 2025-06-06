@@ -1,0 +1,26 @@
+[
+  {
+    "difficulty": "very_easy",
+    "prompt": "Please estimate the causal direction between {VARIABLE_X1} and {VARIABLE_X2} under additive noise assumptions. {VARIABLE_Z1} and {VARIABLE_Z2} are exogenous variables that serve as instrumental variables for {VARIABLE_X1} and {VARIABLE_X2}. Each of instrumental variables only directly affect one of {VARIABLE_X1} and {VARIABLE_X2} and are independent of the noise terms of {VARIABLE_X1} and {VARIABLE_X2}. So if regressions of {VARIABLE_X1} and {VARIABLE_X2} on {VARIABLE_Z1} and {VARIABLE_Z2} are performed, the instrumental variable that has only one non-zero coefficient points to the child variable of {VARIABLE_X1} and {VARIABLE_X2}."
+  },
+  {
+    "difficulty": "easy",
+    "prompt": "Please estimate the causal direction between {VARIABLE_X1} and {VARIABLE_X2} under additive noise assumptions. {VARIABLE_Z1} and {VARIABLE_Z2} are exogenous variables that serve as instrumental variables for {VARIABLE_X1} and {VARIABLE_X2}. Each of instrumental variables only directly affect one of {VARIABLE_X1} and {VARIABLE_X2} and are independent of the noise terms of {VARIABLE_X1} and {VARIABLE_X2}."
+  },
+  {
+    "difficulty": "medium",
+    "prompt": "Please estimate the causal direction between {VARIABLE_X1} and {VARIABLE_X2} under additive noise assumptions. {VARIABLE_Z1} and {VARIABLE_Z2} are exogenous variables that serve as instrumental variables for {VARIABLE_X1} and {VARIABLE_X2}. Each of instrumental variables only directly affect one of {VARIABLE_X1} and {VARIABLE_X2}."
+  },
+  {
+    "difficulty": "hard",
+    "prompt": "Please estimate the causal direction between {VARIABLE_X1} and {VARIABLE_X2} under additive noise assumptions. {VARIABLE_Z1} and {VARIABLE_Z2} are exogenous variables that serve as instrumental variables for {VARIABLE_X1} and {VARIABLE_X2}."
+  },
+  {
+    "difficulty": "very_hard",
+    "prompt": "Please estimate the causal direction between {VARIABLE_X1} and {VARIABLE_X2} under additive noise assumptions."
+  }
+]
+
+
+
+

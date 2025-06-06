@@ -1,0 +1,96 @@
+{
+    "criteria": [
+        {
+            "id": "METHOD_SELECTION",
+            "desc": "Selects a suitable causal inference method addressing multiple/time-dependent confounders (e.g., IPTW, doubly robust, propensity scores)",
+            "type": "keyword",
+            "keywords": [
+                "IPTW",
+                "inverse probability weighting",
+                "propensity score",
+                "doubly robust",
+                "G-computation",
+                "marginal structural model"
+            ]
+        },
+        {
+            "id": "TIME_DEPENDENT_CONFOUNDING",
+            "desc": "Mentions or adjusts for dynamic/time-dependent confounding explicitly",
+            "type": "keyword",
+            "keywords": [
+                "time-dependent",
+                "dynamic confounding",
+                "longitudinal",
+                "sequential treatment"
+            ]
+        },
+        {
+            "id": "NUISANCE_FEATURES",
+            "desc": "Identifies irrelevant/confusing features and excludes or explicitly justifies inclusion",
+            "type": "keyword",
+            "keywords": [
+                "irrelevant",
+                "exclude",
+                "noise",
+                "SES not relevant",
+                "random_noise"
+            ]
+        },
+        {
+            "id": "CAUSAL_ESTIMAND_DEFINED",
+            "desc": "Defines target causal quantity clearly (e.g., ATE, ATT)",
+            "type": "keyword",
+            "keywords": [
+                "average treatment effect",
+                "ATE",
+                "ATT",
+                "causal estimand"
+            ]
+        },
+        {
+            "id": "UNCERTAINTY_QUANTIFICATION",
+            "desc": "Reports a valid statistical uncertainty measure (CI, SE, p-value)",
+            "type": "keyword",
+            "keywords": [
+                "confidence interval",
+                "CI",
+                "standard error",
+                "SE",
+                "p-value"
+            ]
+        },
+        {
+            "id": "ASSUMPTION_DIAGNOSTICS",
+            "desc": "Conducts and reports at least one diagnostic check (e.g., balance, overlap, sensitivity analysis)",
+            "type": "keyword",
+            "keywords": [
+                "balance check",
+                "overlap",
+                "common support",
+                "sensitivity analysis",
+                "diagnostic"
+            ]
+        },
+        {
+            "id": "LIMITATIONS_DISCUSSION",
+            "desc": "Discusses assumptions or limitations (e.g., residual confounding, missing data, measurement error)",
+            "type": "keyword",
+            "keywords": [
+                "assumption",
+                "limitation",
+                "residual confounding",
+                "missing data",
+                "measurement error"
+            ]
+        },
+        {
+            "id": "NUMERIC_ACCURACY",
+            "desc": "Provides numerical causal estimate within ±{TOLERANCE} of the true causal effect ({TRUE_CAUSAL_EFFECT})",
+            "type": "numeric",
+            "targets": ["{TRUE_CAUSAL_EFFECT}"],
+            "tolerance": "{TOLERANCE}"
+        }
+    ],
+    "max_score": 8,
+    "scale": "Each criterion scored 0-1; total = sum of criteria."
+}

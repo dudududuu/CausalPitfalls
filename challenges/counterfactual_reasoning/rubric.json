@@ -1,0 +1,50 @@
+{
+  "criteria": [
+    {
+      "id": "VARIABLE_IDENTIFICATION",
+      "desc": "States which variable is treatment ({VARIABLE_X}), outcome ({VARIABLE_Y}), confounder ({CONFOUNDER}), and downstream variable ({DOWNSTREAM_VAR})",
+      "type": "keyword",
+      "keywords": ["{VARIABLE_X}", "{VARIABLE_Y}", "{CONFOUNDER}", "{DOWNSTREAM_VAR}"]
+    },
+    {
+      "id": "DAG_PROPOSAL",
+      "desc": "Notes that {CONFOUNDER} affects both {VARIABLE_X} and {VARIABLE_Y}, and that {DOWNSTREAM_VAR} follows from {VARIABLE_Y} and should not be controlled",
+      "type": "keyword",
+      "keywords": ["{CONFOUNDER}", "{VARIABLE_X}", "{VARIABLE_Y}", "{DOWNSTREAM_VAR}", "confounder", "downstream"]
+    },
+    {
+      "id": "ASSUMPTION_IDENTIFICATION",
+      "desc": "Describes that no unmeasured confounding remains after adjusting for {CONFOUNDER}",
+      "type": "keyword",
+      "keywords": ["unconfoundedness", "no hidden confounding"]
+    },
+    {
+      "id": "NONLINEAR_ACKNOWLEDGMENT",
+      "desc": "Acknowledges that the relationship between {VARIABLE_X} and {VARIABLE_Y} may be nonlinear",
+      "type": "keyword",
+      "keywords": ["nonlinear", "functional form", "dose-response"]
+    },
+    {
+      "id": "CONDITIONAL_DIFFERENCE",
+      "desc": "Reports the observed mean difference in {VARIABLE_Y} between {DOSE_BEFORE} and {DOSE_AFTER}",
+      "type": "numeric",
+      "target": "Conditional difference matches reference",
+      "tolerance": "{TOLERANCE}"
+    },
+    {
+      "id": "BIAS_CORRECTION",
+      "desc": "Applies a valid adjustment method (e.g., {CORRECTION_METHOD}) to estimate the causal effect",
+      "type": "keyword",
+      "keywords": ["{CORRECTION_METHOD}", "adjustment", "confounding"]
+    },
+    {
+      "id": "ACCURATE_ATE",
+      "desc": "Provides the ATE estimate for {VARIABLE_X} changing from {DOSE_BEFORE} to {DOSE_AFTER} within tolerated bounds",
+      "type": "numeric",
+      "target": "ATE matches reference",
+      "tolerance": "{TOLERANCE}"
+    }
+  ],
+  "max_score": 7,
+  "scale": "Score each criterion 0 or 1; total score = sum of criteria."
+}

@@ -1,0 +1,117 @@
+[{
+  "dataset": "sequential_mediation_dataset.csv",
+  "TREATMENT": "educational_intervention",
+  "OUTCOME": "mental_health_score",
+  "TRUE_CONFOUNDERS": [
+    "socioeconomic_status",
+    "school_quality_score",
+    "baseline_cognitive_score"
+  ],
+  "MEDIATORS": [
+    "coping_strategy_improvement",
+    "social_support_enhancement"
+  ],
+  "IRRELEVANT_VARIABLES": [
+    "random_noise"
+  ],
+  "OVERALL_DIRECTION": "positive",
+  "ADJUSTED_DIRECTION": "positive",
+  "OVERALL_MEAN_TREATMENT": "149.3405",
+  "OVERALL_MEAN_NO_TREATMENT": "136.1052",
+  "ADJUSTED_TREATMENT_EFFECT": "9.5331",
+  "TOLERANCE": 0.05
+},
+   {
+    "dataset": "sequential_mediation_variant1.csv",
+    "TREATMENT": "educational_intervention",
+    "OUTCOME": "mental_health_score",
+    "TRUE_CONFOUNDERS": [
+      "socioeconomic_status",
+      "school_quality_score",
+      "baseline_cognitive_score"
+    ],
+    "MEDIATORS": [
+      "coping_strategy_improvement",
+      "social_support_enhancement"
+    ],
+    "IRRELEVANT_VARIABLES": [
+      "random_noise"
+    ],
+    "OVERALL_DIRECTION": "positive",
+    "ADJUSTED_DIRECTION": "positive",
+    "OVERALL_MEAN_TREATMENT": 147.3557,
+    "OVERALL_MEAN_NO_TREATMENT": 138.0406,
+    "ADJUSTED_TREATMENT_EFFECT": 9.6022,
+    "TOLERANCE": 0.05
+  },
+  {
+    "dataset": "sequential_mediation_variant2.csv",
+    "TREATMENT": "educational_intervention",
+    "OUTCOME": "mental_health_score",
+    "TRUE_CONFOUNDERS": [
+      "socioeconomic_status",
+      "school_quality_score",
+      "baseline_cognitive_score"
+    ],
+    "MEDIATORS": [
+      "coping_strategy_improvement",
+      "social_support_enhancement"
+    ],
+    "IRRELEVANT_VARIABLES": [
+      "random_noise"
+    ],
+    "OVERALL_DIRECTION": "positive",
+    "ADJUSTED_DIRECTION": "positive",
+    "OVERALL_MEAN_TREATMENT": 146.6765,
+    "OVERALL_MEAN_NO_TREATMENT": 138.0581,
+    "ADJUSTED_TREATMENT_EFFECT": 8.6903,
+    "TOLERANCE": 0.05
+  },
+  {
+    "dataset": "sequential_mediation_variant3.csv",
+    "TREATMENT": "educational_intervention",
+    "OUTCOME": "mental_health_score",
+    "TRUE_CONFOUNDERS": [
+      "socioeconomic_status",
+      "school_quality_score",
+      "baseline_cognitive_score"
+    ],
+    "MEDIATORS": [
+      "coping_strategy_improvement",
+      "social_support_enhancement"
+    ],
+    "IRRELEVANT_VARIABLES": [
+      "random_noise"
+    ],
+    "OVERALL_DIRECTION": "positive",
+    "ADJUSTED_DIRECTION": "positive",
+    "OVERALL_MEAN_TREATMENT": 148.2432,
+    "OVERALL_MEAN_NO_TREATMENT": 138.7164,
+    "ADJUSTED_TREATMENT_EFFECT": 9.3404,
+    "TOLERANCE": 0.05
+  },
+  {
+    "dataset": "sequential_mediation_variant4.csv",
+    "TREATMENT": "educational_intervention",
+    "OUTCOME": "mental_health_score",
+    "TRUE_CONFOUNDERS": [
+      "socioeconomic_status",
+      "school_quality_score",
+      "baseline_cognitive_score"
+    ],
+    "MEDIATORS": [
+      "coping_strategy_improvement",
+      "social_support_enhancement"
+    ],
+    "IRRELEVANT_VARIABLES": [
+      "random_noise"
+    ],
+    "OVERALL_DIRECTION": "positive",
+    "ADJUSTED_DIRECTION": "positive",
+    "OVERALL_MEAN_TREATMENT": 147.8744,
+    "OVERALL_MEAN_NO_TREATMENT": 135.3593,
+    "ADJUSTED_TREATMENT_EFFECT": 10.9434,
+    "TOLERANCE": 0.05
+  }
+]
+

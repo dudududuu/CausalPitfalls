@@ -1,0 +1,60 @@
+{
+    "instructions": "Score each criterion 1 if the analysis includes the specified element, otherwise 0. Total = sum of scores.",
+    "criteria": [
+      {
+        "id": "IDENTIFY_POPULATIONS",
+        "type": "keyword",
+        "desc": "Mentions and distinguishes {VARIABLE_U} A and {VARIABLE_U} B",
+        "keywords": [
+          "{VARIABLE_U} A",
+          "{VARIABLE_U} B"
+        ]
+      },
+      {
+        "id": "REPORT_PROGINT_COEF_A",
+        "type": "keyword",
+        "desc": "Reports the coefficient of {VARIABLE_X2} on {VARIABLE_Y} for {VARIABLE_U} A and its significance",
+        "keywords": [
+          "{VARIABLE_X2}",
+          "p-value",
+          "EFFECT_A",
+          "{VARIABLE_U} A"
+        ]
+      },
+      {
+        "id": "REPORT_PROGINT_COEF_B",
+        "type": "keyword",
+        "desc": "Reports the coefficient of {VARIABLE_X2} on {VARIABLE_Y} for {VARIABLE_U} B and its significance",
+        "keywords": [
+          "{VARIABLE_X2}",
+          "p-value",
+          "EFFECT_B",
+          "{VARIABLE_U} B"
+        ]
+      },
+      {
+        "id": "COMPARE_PROGRAM_EFFECTS",
+        "type": "keyword",
+        "desc": "Compares the magnitude of the {VARIABLE_X2} effect between {VARIABLE_U} A and {VARIABLE_U} B",
+        "keywords": [
+          "larger in {VARIABLE_U} A",
+          "smaller in {VARIABLE_U} B",
+          "magnitude"
+        ]
+      },
+      {
+        "id": "STATE_CONCLUSION",
+        "type": "keyword",
+        "desc": "Summarizes the overall conclusion about the effect of {VARIABLE_X2} on {VARIABLE_Y} between {VARIABLE_U} A and {VARIABLE_U} B",
+        "keywords": [
+          "effect of {VARIABLE_X2} on {VARIABLE_Y} is larger in {VARIABLE_U} A",
+          "effect of {VARIABLE_X2} on {VARIABLE_Y} is smaller in {VARIABLE_U} B",
+          "effect of {VARIABLE_X2} on {VARIABLE_Y} is different between {VARIABLE_U} A and {VARIABLE_U} B"
+        ]
+      }
+    ],
+    "scale": "0 or 1 per criterion",
+    "max_score": 5
+  }
+  
+  

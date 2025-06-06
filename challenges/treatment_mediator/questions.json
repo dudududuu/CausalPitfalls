@@ -1,0 +1,22 @@
+[
+  {
+    "difficulty": "very_easy",
+    "prompt": "Evaluate if {TREATMENT} causally affects {OUTCOME}. Adjusting for {TRUE_CONFOUNDERS}. Provide adjusted numerical effects with uncertainty (CI or p-value). Briefly mention limitations. Identify any mediator involved."
+  },
+  {
+    "difficulty": "easy",
+    "prompt": "Evaluate whether {TREATMENT} causally affects {OUTCOME}. Adjust appropriately for relevant confounders. Provide adjusted numerical results and uncertainty measures. Briefly discuss observational limitations and alternative explanations. State your causal conclusion and practical recommendation."
+  },
+  {
+    "difficulty": "medium",
+    "prompt": "Evaluate whether {TREATMENT} causally influences {OUTCOME}. Select and justify variables for adjustment. Present adjusted numerical effects with uncertainty measures. Discuss observational limitations. Provide your causal conclusion with a brief recommendation."
+  },
+  {
+    "difficulty": "hard",
+    "prompt": "Assess if {TREATMENT} has a causal impact on {OUTCOME}. Identify variables for adjustment and thoroughly justify their selection. Discuss observational limitations and alternative interpretations. Conclude with your causal interpretation."
+  },
+  {
+    "difficulty": "very_hard",
+    "prompt": "Critically evaluate whether {TREATMENT} causally affects {OUTCOME}."
+  }
+]

@@ -1,0 +1,86 @@
+[   {
+    "dataset": "observational_sleep_study.csv",
+    "TREATMENT": "supplement",
+    "OUTCOME": "sleep_quality",
+    "TRUE_CONFOUNDERS": ["exercise_regularly", "age_old"],
+    "IRRELEVANT_CONFOUNDERS": ["coffee_drinker", "watch_tv_late", "income"],
+    "OVERALL_DIRECTION": "beneficial",
+    "ADJUSTED_DIRECTION": "no_effect",
+    "OVERALL_P_YES": 0.6535,
+    "OVERALL_P_NO": 0.4212,
+    "ADJUSTED_P_DIFF": 0.0740,
+    "TOLERANCE": 0.02
+},
+    {
+      "dataset": "diet_adherence_study.csv",
+      "TREATMENT": "diet_adherence",
+      "OUTCOME": "weight_loss_success",
+      "TRUE_CONFOUNDERS": [
+        "exercise_regularly",
+        "age_old"
+      ],
+      "IRRELEVANT_CONFOUNDERS": [
+        "caffeine_intake",
+        "screen_time",
+        "income"
+      ],
+      "OVERALL_P_YES": 0.693,
+      "OVERALL_P_NO": 0.535,
+      "ADJUSTED_P_DIFF": -0.016,
+      "TOLERANCE": 0.02
+    },
+    {
+      "dataset": "gym_membership_study.csv",
+      "TREATMENT": "gym_membership",
+      "OUTCOME": "fitness_improvement",
+      "TRUE_CONFOUNDERS": [
+        "previous_fitness",
+        "age_old"
+      ],
+      "IRRELEVANT_CONFOUNDERS": [
+        "coffee_drinker",
+        "tv_viewing",
+        "diet_type"
+      ],
+      "OVERALL_P_YES": 0.6521,
+      "OVERALL_P_NO": 0.4684,
+      "ADJUSTED_P_DIFF": -0.0124,
+      "TOLERANCE": 0.02
+    },
+    {
+      "dataset": "meditation_app_study.csv",
+      "TREATMENT": "meditation_use",
+      "OUTCOME": "stress_reduction",
+      "TRUE_CONFOUNDERS": [
+        "stress_high",
+        "age_old"
+      ],
+      "IRRELEVANT_CONFOUNDERS": [
+        "smartphone_use",
+        "noise_level",
+        "sleep_habit"
+      ],
+      "OVERALL_P_YES": 0.5906,
+      "OVERALL_P_NO": 0.3779,
+      "ADJUSTED_P_DIFF": 0.0502,
+      "TOLERANCE": 0.02
+    },
+    {
+      "dataset": "study_schedule_study.csv",
+      "TREATMENT": "study_schedule",
+      "OUTCOME": "exam_success",
+      "TRUE_CONFOUNDERS": [
+        "prepared_early",
+        "age_old"
+      ],
+      "IRRELEVANT_CONFOUNDERS": [
+        "social_media",
+        "part_time_job",
+        "major"
+      ],
+      "OVERALL_P_YES": 0.6046,
+      "OVERALL_P_NO": 0.4406,
+      "ADJUSTED_P_DIFF": -0.001,
+      "TOLERANCE": 0.02
+    }
+  ]

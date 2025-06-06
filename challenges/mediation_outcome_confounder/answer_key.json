@@ -1,0 +1,101 @@
+    [
+    {
+      "dataset": "student_intervention_study.csv",
+      "TREATMENT": "received_intervention",
+      "OUTCOME": "final_test_score",
+      "TRUE_CONFOUNDERS": [
+        "socioeconomic_status",
+        "school_quality_score",
+        "baseline_test_score"
+      ],
+      "IRRELEVANT_CONFOUNDERS": [
+        "unrelated_random_variable",
+        "parental_edu_level",
+        "student_motivation_level"
+      ],
+      "OVERALL_DIRECTION": "positive",
+      "ADJUSTED_DIRECTION": "positive",
+      "OVERALL_MEAN_TREATMENT": 104.5164,
+      "OVERALL_MEAN_NO_TREATMENT": 100.389,
+      "ADJUSTED_TREATMENT_EFFECT": 2.9534,
+      "TOLERANCE": 0.05
+    },
+    {
+      "dataset": "rehabilitation_program_study.csv",
+      "TREATMENT": "received_rehab_program",
+      "OUTCOME": "final_mobility_score",
+      "TRUE_CONFOUNDERS": [
+        "initial_injury_severity",
+        "baseline_mobility_score",
+        "pain_tolerance_level"
+      ],
+      "IRRELEVANT_CONFOUNDERS": [
+        "unrelated_random_variable",
+        "injury_type"
+      ],
+      "OVERALL_DIRECTION": "positive",
+      "ADJUSTED_DIRECTION": "positive",
+      "OVERALL_MEAN_TREATMENT": 75.8776,
+      "OVERALL_MEAN_NO_TREATMENT": 73.404,
+      "ADJUSTED_TREATMENT_EFFECT": 2.6943,
+      "TOLERANCE": 0.05
+    },
+    {
+      "dataset": "nutrition_program_study.csv",
+      "TREATMENT": "received_nutrition_program",
+      "OUTCOME": "final_weight_loss",
+      "TRUE_CONFOUNDERS": [
+        "baseline_bmi",
+        "baseline_energy_level",
+        "motivation_score"
+      ],
+      "IRRELEVANT_CONFOUNDERS": [
+        "unrelated_random_variable"
+      ],
+      "OVERALL_DIRECTION": "positive",
+      "ADJUSTED_DIRECTION": "positive",
+      "OVERALL_MEAN_TREATMENT": 93.1829,
+      "OVERALL_MEAN_NO_TREATMENT": 90.0427,
+      "ADJUSTED_TREATMENT_EFFECT": 3.0549,
+      "TOLERANCE": 0.05
+    },
+    {
+      "dataset": "language_learning_study.csv",
+      "TREATMENT": "took_interactive_course",
+      "OUTCOME": "final_proficiency",
+      "TRUE_CONFOUNDERS": [
+        "prior_language_experience",
+        "baseline_proficiency",
+        "motivation_level"
+      ],
+      "IRRELEVANT_CONFOUNDERS": [
+        "unrelated_random_variable"
+      ],
+      "OVERALL_DIRECTION": "positive",
+      "ADJUSTED_DIRECTION": "positive",
+      "OVERALL_MEAN_TREATMENT": 82.085,
+      "OVERALL_MEAN_NO_TREATMENT": 77.7287,
+      "ADJUSTED_TREATMENT_EFFECT": 3.8945,
+      "TOLERANCE": 0.05
+    },
+    {
+      "dataset": "exercise_intervention_study.csv",
+      "TREATMENT": "enrolled_in_exercise_program",
+      "OUTCOME": "final_endurance_score",
+      "TRUE_CONFOUNDERS": [
+        "baseline_fitness_level",
+        "baseline_endurance_score",
+        "motivation_index"
+      ],
+      "IRRELEVANT_CONFOUNDERS": [
+        "unrelated_random_variable"
+      ],
+      "OVERALL_DIRECTION": "positive",
+      "ADJUSTED_DIRECTION": "positive",
+      "OVERALL_MEAN_TREATMENT": 63.8475,
+      "OVERALL_MEAN_NO_TREATMENT": 57.5536,
+      "ADJUSTED_TREATMENT_EFFECT": 4.2394,
+      "TOLERANCE": 0.05
+    }
+  ]
+  

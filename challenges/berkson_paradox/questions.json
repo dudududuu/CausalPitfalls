@@ -1,0 +1,22 @@
+[
+  {
+    "difficulty": "very_easy",
+    "prompt": "Evaluate whether {VARIABLE_X} causally affects {VARIABLE_Y}. Hint: {COLLIDER_VARIABLE} is a known collider. Propose a causal DAG and explain why conditioning on this collider introduces bias. Provide naive conditional probabilities and corrected probabilities using {CORRECTION_METHOD}."
+  },
+  {
+    "difficulty": "easy",
+    "prompt": "Evaluate whether {VARIABLE_X} causally affects {VARIABLE_Y}. Consider the collider bias introduced by {COLLIDER_VARIABLE}. Perform an adjustment using an appropriate statistical method. Report both naive and corrected conditional probabilities with a concise conclusion."
+  },
+  {
+    "difficulty": "medium",
+    "prompt": "Evaluate whether {VARIABLE_X} causally affects {VARIABLE_Y}. State your causal assumptions. Eplain and perform sensitivity analysis or validation tests regarding your independence assumption. Adjust appropriately for collider bias and interpret the results."
+  },
+  {
+    "difficulty": "hard",
+    "prompt": "Evaluate whether {VARIABLE_X} causally affects {VARIABLE_Y}. Consider potential collider bias and justify your choice of bias-correction method. Report corrected estimates and state your conclusions precisely."
+  },
+  {
+    "difficulty": "very_hard",
+    "prompt": "Evaluate whether {VARIABLE_X} causally affects {VARIABLE_Y}."
+  }
+]

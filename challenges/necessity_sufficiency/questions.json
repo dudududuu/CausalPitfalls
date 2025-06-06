@@ -1,0 +1,22 @@
+[
+  {
+    "difficulty": "very_easy",
+    "prompt": "Justify if {VARIABLE_X} is a globally necessary and sufficient cause for {VARIABLE_Y} > {THRESHOLD}. Describe outcomes of interventions on {VARIABLE_X}, supported by examples using {CONTEXT_1} and {CONTEXT_2}. Include definitions of global necessity and sufficiency. "
+  },
+  {
+    "difficulty": "easy",
+    "prompt": "Justify if {VARIABLE_X} is a globally necessary and sufficient cause for {VARIABLE_Y} > {THRESHOLD}. Describe outcomes of interventions on {VARIABLE_X}, supported by examples using {CONTEXT_1} and {CONTEXT_2}."
+  },
+  {
+    "difficulty": "medium",
+    "prompt": "Justify if {VARIABLE_X} is a globally necessary and sufficient cause for {VARIABLE_Y} > {THRESHOLD}. Provide counterfactual reasoning and intervention outcomes."
+  },
+  {
+    "difficulty": "hard",
+    "prompt": "Justify if {VARIABLE_X} is globally necessary and sufficient for {VARIABLE_Y} > {THRESHOLD} using appropriate causal reasoning."
+  },
+  {
+    "difficulty": "very_hard",
+    "prompt": "Justify necessity and sufficiency of {VARIABLE_X} for {VARIABLE_Y} > {THRESHOLD}."
+  }
+]

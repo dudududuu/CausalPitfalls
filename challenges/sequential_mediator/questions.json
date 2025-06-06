@@ -1,0 +1,22 @@
+[
+  {
+    "difficulty": "very_easy",
+    "prompt": "Evaluate whether {TREATMENT} causally affects {OUTCOME}. Adjust for {TRUE_CONFOUNDERS} using regression or stratification. Provide adjusted numerical effects, uncertainty measures (95% CI or p-value), discuss observational limitations and alternative explanations, then state your causal conclusion with a practical recommendation."
+  },
+  {
+    "difficulty": "easy",
+    "prompt": "Evaluate whether {TREATMENT} causally affects {OUTCOME}. Adjust for relevant confounders and present adjusted numerical effects with uncertainty measures. Discuss observational limitations and alternative explanations. State your causal conclusion and provide a recommendation."
+  },
+  {
+    "difficulty": "medium",
+    "prompt": "Evaluate whether {TREATMENT} causally affects {OUTCOME}. Select appropriate variables for adjustment, justify your choices, and present numerical effects with uncertainty measures. Discuss relevant observational limitations. State your causal conclusion."
+  },
+  {
+    "difficulty": "hard",
+    "prompt": "Evaluate whether {TREATMENT} causally affects {OUTCOME}. Choose variables for adjustment and justify your selection. Present numerical results with uncertainty. State your causal conclusion."
+  },
+  {
+    "difficulty": "very_hard",
+    "prompt": "Evaluate whether {TREATMENT} causally affects {OUTCOME}. State your causal conclusion."
+  }
+]

@@ -1,0 +1,26 @@
+[
+  {
+    "difficulty": "very_easy",
+    "prompt": "Estimate the average treatment effect (ATE) on {VARIABLE_Y} when {VARIABLE_X} changes from -1 to 2 and the observed difference in {VARIABLE_Y} when dosage is -1 and 2, allowing for nonlinear effects. Suggest that {CONFOUNDER} may be a confounder to consider for adjustment (and note that therapeutic_score may be a downstream result of {VARIABLE_Y} and should not be adjusted). Make clear all the assumptions you are making when estimating the ATE."
+  },
+  {
+    "difficulty": "easy",
+    "prompt": "Estimate the average treatment effect (ATE) on {VARIABLE_Y} when {VARIABLE_X} changes from -1 to 2 and the observed difference in {VARIABLE_Y} when dosage is -1 and 2, allowing for nonlinear effects. Suggest that {CONFOUNDER} may be a confounder to consider for adjustment (and note that therapeutic_score may be a downstream result of {VARIABLE_Y} and should not be adjusted). "
+  },
+  {
+    "difficulty": "medium",
+    "prompt": "Estimate the average treatment effect (ATE) on {VARIABLE_Y} when {VARIABLE_X} changes from -1 to 2 and the observed difference in {VARIABLE_Y} when dosage is -1 and 2, allowing for nonlinear effects. Suggest that {CONFOUNDER} may be a confounder to consider for adjustment."
+  },
+  {
+    "difficulty": "hard",
+    "prompt": "Estimate the average treatment effect (ATE) on {VARIABLE_Y} when {VARIABLE_X} changes from -1 to 2 and the observed difference in {VARIABLE_Y} when dosage is -1 and 2. Suggest that {CONFOUNDER} may be a confounder to consider for adjustment."
+  },
+  {
+    "difficulty": "very_hard",
+    "prompt": "Estimate the average treatment effect (ATE) on {VARIABLE_Y} when {VARIABLE_X} changes from -1 to 2 and the observed difference in {VARIABLE_Y} when dosage is -1 and 2."
+  }
+]
+
+
+
+

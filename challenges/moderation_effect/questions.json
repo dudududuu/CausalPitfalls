@@ -1,0 +1,22 @@
+  [
+    {
+      "difficulty": "very_easy",
+      "prompt": "Analyze how {VARIABLE_X2} affects {VARIABLE_Y} considering a linear relationship among the variables. Note that {VARIABLE_X1} may be a confounder. Also, {VARIABLE_X1} and {VARIABLE_X2} may have an interaction effect on {VARIABLE_Y}. So when you analyze the effect of {VARIABLE_X2} on {VARIABLE_Y}, you should consider the interaction term. When you interpret the results, consider the effect of {VARIABLE_X2} on {VARIABLE_Y} controlling for the effect of {VARIABLE_X1}."
+    },
+    {
+      "difficulty": "easy",
+      "prompt": "Analyze how {VARIABLE_X2} affects {VARIABLE_Y} considering a linear relationship among the variables. Note that {VARIABLE_X1} may be a confounder. Also, {VARIABLE_X1} and {VARIABLE_X2} may have an interaction effect on {VARIABLE_Y}. So when you analyze the effect of {VARIABLE_X2} on {VARIABLE_Y}, you should consider the interaction term."
+    },
+    {
+      "difficulty": "medium",
+      "prompt": "Analyze how {VARIABLE_X2} affects {VARIABLE_Y} considering a linear relationship among the variables. Note that {VARIABLE_X1} may be a confounder."
+    },
+    {
+      "difficulty": "hard",
+      "prompt": "Analyze how {VARIABLE_X2} affects {VARIABLE_Y} considering a linear relationship among the variables."
+    },
+    {
+      "difficulty": "very_hard",
+      "prompt": "Analyze how {VARIABLE_X2} affects {VARIABLE_Y}."
+    }
+  ]

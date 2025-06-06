@@ -1,0 +1,22 @@
+[
+    {
+      "difficulty": "very_easy",
+      "prompt": "Analyze how {VARIABLE_X2} affects {VARIABLE_Y} considering a linear relationship among the variables. Note that in different {VARIABLE_U}, {VARIABLE_X2} may have a different effect on {VARIABLE_Y}. So when you analyze the effect of {VARIABLE_X2} on {VARIABLE_Y}, you should consider analyze the effect of {VARIABLE_X2} on {VARIABLE_Y} in different {VARIABLE_U}. That is, you may want to fit the linear model of {VARIABLE_Y} on {VARIABLE_X2} and {VARIABLE_X1} under different {VARIABLE_U} and interpret the results."
+    },
+    {
+      "difficulty": "easy",
+      "prompt": "Analyze how {VARIABLE_X2} affects {VARIABLE_Y} considering a linear relationship among the variables. Note that in different {VARIABLE_U}, {VARIABLE_X2} may have a different effect on {VARIABLE_Y}. That is, you may want to fit the linear model of {VARIABLE_Y} on {VARIABLE_X2} and {VARIABLE_X1} under different {VARIABLE_U} and interpret the results."
+    },
+    {
+      "difficulty": "medium",
+      "prompt": "Analyze how {VARIABLE_X2} affects {VARIABLE_Y} considering a linear relationship among the variables. You may want to fit the linear model of {VARIABLE_Y} on {VARIABLE_X2} and {VARIABLE_X1} under different {VARIABLE_U} and interpret the results."
+    },
+    {
+      "difficulty": "hard",
+      "prompt": "Analyze how {VARIABLE_X2} affects {VARIABLE_Y} considering a linear relationship among the variables."
+    },
+    {
+      "difficulty": "very_hard",
+      "prompt": "Analyze how {VARIABLE_X2} affects {VARIABLE_Y}."
+    }
+  ]

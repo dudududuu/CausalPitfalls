@@ -1,0 +1,52 @@
+[   {
+    "dataset": "population_shift_sem.csv",
+    "VARIABLE_U": "pop",
+    "VARIABLE_X1": "SocioEconomicStatus",
+    "VARIABLE_X2": "ProgramIntensity",
+    "VARIABLE_Y": "TestScore",
+    "EFFECT_A": "1",
+    "EFFECT_B": "0.5",
+    "TOLERANCE": "0.1"
+},
+    {
+      "dataset": "population_shift_variant1.csv",
+      "VARIABLE_U": "pop",
+      "VARIABLE_X1": "SocioEconomicStatus",
+      "VARIABLE_X2": "ProgramIntensity",
+      "VARIABLE_Y": "TestScore",
+      "EFFECT_A": 1.2,
+      "EFFECT_B": 0.6,
+      "TOLERANCE": 0.1
+    },
+    {
+      "dataset": "population_shift_variant2.csv",
+      "VARIABLE_U": "pop",
+      "VARIABLE_X1": "SocioEconomicStatus",
+      "VARIABLE_X2": "ProgramIntensity",
+      "VARIABLE_Y": "TestScore",
+      "EFFECT_A": 1.0,
+      "EFFECT_B": 0.5,
+      "TOLERANCE": 0.1
+    },
+    {
+      "dataset": "population_shift_variant3.csv",
+      "VARIABLE_U": "pop",
+      "VARIABLE_X1": "SocioEconomicStatus",
+      "VARIABLE_X2": "ProgramIntensity",
+      "VARIABLE_Y": "TestScore",
+      "EFFECT_A": 0.8,
+      "EFFECT_B": 0.4,
+      "TOLERANCE": 0.1
+    },
+    {
+      "dataset": "population_shift_variant4.csv",
+      "VARIABLE_U": "pop",
+      "VARIABLE_X1": "SocioEconomicStatus",
+      "VARIABLE_X2": "ProgramIntensity",
+      "VARIABLE_Y": "TestScore",
+      "EFFECT_A": 1.4,
+      "EFFECT_B": 0.7,
+      "TOLERANCE": 0.1
+    }
+  ]
+  

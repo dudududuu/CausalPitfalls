@@ -1,0 +1,52 @@
+[ {
+  "dataset": "stress_sem.csv",
+  "VARIABLE_X": "Temperature",
+  "CONTEXT_1": "Pressure",
+  "CONTEXT_2": "Vibration_level",
+  "VARIABLE_Y": "Stress_Severity",
+  "IS_NECESSARY": "is",
+  "IS_SUFFICIENT": "is not",
+  "THRESHOLD": 1.5
+},
+  {
+    "dataset": "factory_monitoring.csv",
+    "VARIABLE_X": "machine_temperature",
+    "CONTEXT_1": "hydraulic_pressure",
+    "CONTEXT_2": "vibration_intensity",
+    "VARIABLE_Y": "failure_risk",
+    "IS_NECESSARY": "is",
+    "IS_SUFFICIENT": "is not",
+    "THRESHOLD": 1.5
+  },
+  {
+    "dataset": "patient_recovery.csv",
+    "VARIABLE_X": "treatment_dosage",
+    "CONTEXT_1": "inflammation_level",
+    "CONTEXT_2": "activity_level",
+    "VARIABLE_Y": "recovery_score",
+    "IS_NECESSARY": "is",
+    "IS_SUFFICIENT": "is not",
+    "THRESHOLD": 1.5
+  },
+  {
+    "dataset": "network_health.csv",
+    "VARIABLE_X": "packet_loss_rate",
+    "CONTEXT_1": "network_latency",
+    "CONTEXT_2": "signal_vibration",
+    "VARIABLE_Y": "uptime_reliability",
+    "IS_NECESSARY": "is",
+    "IS_SUFFICIENT": "is not",
+    "THRESHOLD": 1.5
+  },
+  {
+    "dataset": "bridge_integrity.csv",
+    "VARIABLE_X": "material_stress",
+    "CONTEXT_1": "load_pressure",
+    "CONTEXT_2": "vibration_frequency",
+    "VARIABLE_Y": "failure_probability",
+    "IS_NECESSARY": "is",
+    "IS_SUFFICIENT": "is not",
+    "THRESHOLD": 1.5
+  }
+]
+

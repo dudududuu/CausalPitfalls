@@ -1,0 +1,75 @@
+{
+  "criteria": [
+    {
+      "id": "JUSTIFY_TRUE_CONFOUNDERS",
+      "desc": "Identifies each of the true confounders (<TRUE_CONFOUNDERS>) AND justifies how each confounder influences both the treatment and the outcome.",
+      "type": "justification",
+      "expected": "<TRUE_CONFOUNDERS>"
+    },
+    {
+      "id": "JUSTIFY_IRRELEVANT_CONFOUNDERS",
+      "desc": "Identifies each irrelevant variable (<IRRELEVANT_CONFOUNDERS>) AND justifies why each is NOT a confounder (e.g., does not strongly affect both treatment and outcome).",
+      "type": "justification",
+      "expected": "<IRRELEVANT_CONFOUNDERS>"
+    },
+    {
+      "id": "JUSTIFY_ADJUSTMENT_METHOD",
+      "desc": "States the chosen adjustment method (stratification, logistic regression, regression adjustment, IPTW) AND justifies why this method is appropriate given the data and research question.",
+      "type": "justification_keyword",
+      "keywords": [
+        "stratification",
+        "logistic regression",
+        "regression adjustment",
+        "IPTW"
+      ],
+      "expected": ""
+    },
+    {
+      "id": "STATE_CORRECT_ADJUSTED_CONCLUSION",
+      "desc": "States the correct adjusted causal conclusion (<ADJUSTED_DIRECTION>), contrasting this conclusion with the naive (unadjusted) conclusion from observational correlation.",
+      "type": "contrast_direction",
+      "expected": "<ADJUSTED_DIRECTION>"
+    },
+    {
+      "id": "NUMERICAL_DATA_JUSTIFICATION",
+      "desc": "References adjusted numerical results (e.g., adjusted differences, odds ratios, subgroup comparisons) to justify the causal conclusion.",
+      "type": "explicit_numerical",
+      "expected": "adjusted numerical results (odds ratio, difference, subgroup comparisons)"
+    },
+    {
+      "id": "DETAILED_STATISTICAL_UNCERTAINTY",
+      "desc": "Reports at least one measure of statistical uncertainty (confidence interval, standard error, p-value) AND explains how this measure supports or weakens the causal conclusion.",
+      "type": "uncertainty_interpretation",
+      "keywords": [
+        "confidence interval",
+        "CI",
+        "p-value",
+        "standard error",
+        "SE"
+      ],
+      "expected": ""
+    },
+    {
+      "id": "DETAILED_OBSERVATIONAL_LIMITATIONS",
+      "desc": "Mentions observational data limitations (confounding, causal direction uncertainty, potential omitted variables) AND explains how these limitations affect confidence in the causal conclusions.",
+      "type": "limitation",
+      "keywords": [
+        "observational",
+        "confounding",
+        "uncertainty",
+        "omitted variables",
+        "limitations",
+        "causal direction"
+      ],
+      "expected": ""
+    },
+    {
+      "id": "ALTERNATIVE_EXPLANATIONS",
+      "desc": "Proposes at least one plausible alternative explanation for the observed relationship and discusses how it affects the interpretation of the causal conclusion.",
+      "type": "explicit_alternative",
+      "expected": "alternative causal explanations"
+    }
+  ],
+  "max_score": 8,
+  "scoring_method": "Each criterion scores 1 if fully met, otherwise 0. Total is the sum of criteria scores."
+}

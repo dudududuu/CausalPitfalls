@@ -1,0 +1,47 @@
+[
+    {
+        "dataset": "domain_shift_sem.csv",
+        "VARIABLE_X1": "age",
+        "VARIABLE_X2": "frailty",
+        "VARIABLE_T": "drug_dose",
+        "VARIABLE_Y": "blood_pressure_reduction",
+        "GROUP_1": [30, 50],
+        "GROUP_2": [50, 70]
+    },
+    {
+        "dataset": "cardio_trial.csv",
+        "VARIABLE_X1": "age",
+        "VARIABLE_X2": "comorbidity_index",
+        "VARIABLE_T": "drug_dose",
+        "VARIABLE_Y": "blood_pressure_reduction",
+        "GROUP_1": [30, 50],
+        "GROUP_2": [50, 70]
+    },
+    {
+        "dataset": "diabetes_trial.csv",
+        "VARIABLE_X1": "age",
+        "VARIABLE_X2": "baseline_glucose",
+        "VARIABLE_T": "drug_dose",
+        "VARIABLE_Y": "glucose_reduction",
+        "GROUP_1": [30, 50],
+        "GROUP_2": [50, 70]
+    },
+    {
+        "dataset": "cholesterol_trial.csv",
+        "VARIABLE_X1": "age",
+        "VARIABLE_X2": "metabolic_rate",
+        "VARIABLE_T": "drug_dose",
+        "VARIABLE_Y": "cholesterol_reduction",
+        "GROUP_1": [30, 50],
+        "GROUP_2": [50, 70]
+    },
+    {
+        "dataset": "arthritis_trial.csv",
+        "VARIABLE_X1": "age",
+        "VARIABLE_X2": "inflammation_marker",
+        "VARIABLE_T": "drug_dose",
+        "VARIABLE_Y": "pain_score_reduction",
+        "GROUP_1": [30, 50],
+        "GROUP_2": [50, 70]
+    }
+]

@@ -1,0 +1,66 @@
+{
+    "instructions": "Score each criterion 1 if the answer meets the specification, otherwise 0. Total = sum of scores.",
+    "criteria": [
+      {
+        "id": "DATA_SPLIT",
+        "type": "keyword",
+        "desc": "Recommends splitting data based on {VARIABLE_X1} into {GROUP_1} and {GROUP_2}",
+        "keywords": [
+          "divide data by {VARIABLE_X1}",
+          "two {VARIABLE_X1} groups"
+        ]
+      },
+      {
+        "id": "MODEL_SPECIFICATION",
+        "type": "keyword",
+        "desc": "Specifies fitting a linear model of blood_pressure_reduction on drug_dose and frailty",
+        "keywords": [
+          "linear model",
+          "regression",
+          "drug_dose",
+          "frailty"
+        ]
+      },
+      {
+        "id": "CONDITION_FOR_AGE65",
+        "type": "keyword",
+        "desc": "Conditions the estimate on {VARIABLE_X1} = 65 scenario",
+        "keywords": [
+          "{VARIABLE_X1} = 65",
+          "unit dosage"
+        ]
+      },
+      {
+        "id": "IDENTIFY_NEED_FRAILTY",
+        "type": "keyword",
+        "desc": "Identifies that the individual's {VARIABLE_X2} is needed to estimate the effect",
+        "keywords": [
+          "{VARIABLE_X2}",
+          "need to know",
+          "additional information"
+        ]
+      },
+      {
+        "id": "EXPLAIN_CONFOUNDING",
+        "type": "keyword",
+        "desc": "Explains that {VARIABLE_X2} confounds the drug effect for individuals with {VARIABLE_X1} in {GROUP_2}",
+        "keywords": [
+          "confounder",
+          "{VARIABLE_X2} confounder",
+          "{GROUP_2}"
+        ]
+      },
+      {
+        "id": "ASK_FOR_ADDITIONAL_DATA",
+        "type": "keyword",
+        "desc": "Explicitly asks for {VARIABLE_X2} required to give a numeric estimate",
+        "keywords": [
+          "additional data",
+          "provide the information"
+        ]
+      }
+    ],
+    "scale": "0 or 1 per criterion",
+    "max_score": 6
+  }
+  

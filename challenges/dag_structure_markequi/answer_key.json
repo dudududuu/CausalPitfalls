@@ -1,0 +1,46 @@
+[
+  {
+    "dataset": "study_comprehension_testscore.csv",
+    "VARIABLE_X1": "study_hours",
+    "VARIABLE_X2": "comprehension_level",
+    "VARIABLE_X3": "test_score",
+    "TRUE_GRAPH": ["study_hours->comprehension_level->test_score"],
+    "EQUIVALENT_GRAPHS": [
+      "study_hours->comprehension_level->test_score",
+      "study_hours<-comprehension_level->test_score"
+    ]
+  },
+  {
+    "dataset": "exercise_heart_rate_calories.csv",
+    "VARIABLE_X1": "exercise_minutes",
+    "VARIABLE_X2": "resting_heart_rate",
+    "VARIABLE_X3": "calories_burned",
+    "TRUE_GRAPH": ["exercise_minutes->resting_heart_rate->calories_burned"],
+    "EQUIVALENT_GRAPHS": [
+      "exercise_minutes->resting_heart_rate->calories_burned",
+      "exercise_minutes<-resting_heart_rate->calories_burned"
+    ]
+  },
+  {
+    "dataset": "web_traffic_revenue.csv",
+    "VARIABLE_X1": "page_views",
+    "VARIABLE_X2": "click_throughs",
+    "VARIABLE_X3": "ad_revenue",
+    "TRUE_GRAPH": ["page_views->click_throughs->ad_revenue"],
+    "EQUIVALENT_GRAPHS": [
+      "page_views->click_throughs->ad_revenue",
+      "page_views<-click_throughs->ad_revenue"
+    ]
+  },
+  {
+    "dataset": "sleep_alertness_productivity.csv",
+    "VARIABLE_X1": "sleep_hours",
+    "VARIABLE_X2": "alertness_score",
+    "VARIABLE_X3": "productivity_index",
+    "TRUE_GRAPH": ["sleep_hours->alertness_score->productivity_index"],
+    "EQUIVALENT_GRAPHS": [
+      "sleep_hours->alertness_score->productivity_index",
+      "sleep_hours<-alertness_score->productivity_index"
+    ]
+  }
+]
